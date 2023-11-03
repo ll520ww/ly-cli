@@ -15,7 +15,8 @@ const templates = {
     },
 }
 
-program.version("0.0.1");
+
+program.version("1.0.0");
 
 program
     .command("init <projectName> <tempName>")
@@ -77,5 +78,11 @@ program
         for (const key in templates) {
             console.log(templates[key].dec);
         }
+    });
+program
+    .command("v")
+    .description("查看可用项目模块")
+    .action(() => {
+       console.log("1.0.0")
     });
 program.parse(process.argv);
