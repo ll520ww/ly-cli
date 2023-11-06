@@ -20,7 +20,7 @@ const templates = {
 }
 
 
-program.version("1.1.0","-v,version");
+program.version("1.1.1","-v,version");
 
 
 program
