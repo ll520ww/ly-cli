@@ -3,6 +3,6 @@
 
 # 1、全局安装 npm i -g ly-react-cli
 
-# 2、拉取脚手架 yy iniy test react
+# 2、拉取脚手架 yy init test react
 
-# 3、拉取脚手架(h5) yy iniy test h5
+# 3、拉取脚手架(h5) yy init test h5
