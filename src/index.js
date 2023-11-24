@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { Command } from "commander";
+import {Command} from "commander";
 import download from "download-git-repo";
 import inquirer from "inquirer";
 import handlebars from "handlebars";
@@ -7,20 +7,25 @@ import fs from "fs";
 import ora from "ora";
 import chalk from "chalk";
 import logSymbols from "log-symbols";
+
 const program = new Command();
 const templates = {
     react: {
         downloadUrl: "ll520ww/frontend-cli",
         dec: "webpack5 + react CLI",
     },
-    h5:{
+    wx: {
+        downloadUrl: "ll520ww/wx-cli",
+        dec: "webpack5 + wx CLI",
+    },
+    h5: {
         downloadUrl: "ll520ww/H5-cli-ll",
         dec: "webpack5 + react H5 CLI",
     }
 }
 
 
-program.version("2.0.0","-v,version");
+program.version("2.0.0", "-v,version");
 
 
 program
@@ -32,7 +37,7 @@ program
             `项目名称为：${projectName}, 使用模板为：${tempName} 下载中...`
         );
         spinner.start();
-        const { downloadUrl } = templates[tempName];
+        const {downloadUrl} = templates[tempName];
         download(
             // 下载目标，格式为：用户名/仓库名字#分支
             downloadUrl,

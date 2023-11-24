@@ -6,3 +6,4 @@
 # 2、拉取脚手架 yy init test react
 
 # 3、拉取脚手架(h5) yy init test h5
+# 4、拉取脚手架(h5) yy init test wx
