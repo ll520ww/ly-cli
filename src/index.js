@@ -25,7 +25,7 @@ const templates = {
 }
 
 
-program.version("2.0.0", "-v,version");
+program.version("2.0.1", "-v,version");
 
 
 program
@@ -37,6 +37,10 @@ program
             `项目名称为：${projectName}, 使用模板为：${tempName} 下载中...`
         );
         spinner.start();
+        if (!templates[tempName]) {
+            spinner.fail(chalk.red("模板不存在"));
+            return;
+        }
         const {downloadUrl} = templates[tempName];
         download(
             // 下载目标，格式为：用户名/仓库名字#分支
