@@ -25,7 +25,7 @@ const templates = {
 }
 
 
-program.version("2.0.1", "-v,version");
+program.version("2.0.2", "-v,version");
 
 
 program
