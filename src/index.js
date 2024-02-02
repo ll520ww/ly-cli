@@ -19,13 +19,13 @@ const templates = {
         dec: "webpack5 + wx CLI",
     },
     h5: {
-        downloadUrl: "ll520ww/H5-cli-ll",
+        downloadUrl: "ll520ww/frontend-h5-cli",
         dec: "webpack5 + react H5 CLI",
     }
 }
 
 
-program.version("2.0.2", "-v,version");
+program.version("2.0.4", "-v,version");
 
 
 program
